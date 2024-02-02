@@ -1,0 +1,221 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --body-bg: #1e1e1e;
+    --body-color: #e1e1e1;
+    --card-bg: #3d3d3d;
+}
+
+.bg-fire {
+    background: linear-gradient(to top right, #e4604d, #3d3d3d 25%);
+}
+.fire {
+    background-color: #e4604d;
+}
+
+.bg-grass {
+    background: linear-gradient(to top right, #9dd465, #3d3d3d 25%);
+}
+.grass {
+    background-color: #9dd465;
+}
+
+.bg-electric {
+    background: linear-gradient(to top right, #f9e45f, #3d3d3d 25%);
+}
+.electric {
+    background-color: #f9e45f;
+}
+
+.bg-water {
+    background: linear-gradient(to top right, #6a83d6, #3d3d3d 25%);
+}
+.water {
+    background-color: #6a83d6;
+}
+
+.bg-ground {
+    background: linear-gradient(to top right, #e4c967, #3d3d3d 25%);
+}
+.ground {
+    background-color: #e4c967;
+}
+
+.bg-rock {
+    background: linear-gradient(to top right, #cabb7b, #3d3d3d 25%);
+}
+.rock {
+    background-color: #cabb7b;
+}
+
+.bg-fairy {
+    background: linear-gradient(to top right, #eeb2fa, #3d3d3d 25%);
+}
+.fairy {
+    background-color: #eeb2fa;
+}
+
+.bg-poison {
+    background: linear-gradient(to top right, #9f619d, #3d3d3d 25%);
+}
+.poison {
+    background-color: #9f619d;
+}
+
+.bg-bug {
+    background: linear-gradient(to top right, #c5cf4a, #3d3d3d 25%);
+}
+.bug {
+    background-color: #c5cf4a;
+}
+
+.bg-dragon {
+    background: linear-gradient(to top right, #857af7, #3d3d3d 25%);
+}
+.dragon {
+    background-color: #857af7;
+}
+
+.bg-psychic {
+    background: linear-gradient(to top right, #e56eaf, #3d3d3d 25%);
+}
+.psychic {
+    background-color: #e56eaf;
+}
+
+.bg-flying {
+    background: linear-gradient(to top right, #80a4f9, #3d3d3d 25%);
+}
+.flying {
+    background-color: #80a4f9;
+}
+
+.bg-fighting {
+    background: linear-gradient(to top right, #9b5a48, #3d3d3d 25%);
+}
+.fighting {
+    background-color: #9b5a48;
+}
+
+.bg-normal {
+    background: linear-gradient(to top right, #bab8ab, #3d3d3d 25%);
+}
+
+.normal {
+    background-color: #bab8ab;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--body-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(173, 172, 172);
+    border-radius: 10px;
+    background-color: var(--card-bg);
+}
+
+.card .title h2{
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card .image {
+    margin: 40px auto;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    /*background: linear-gradient(to top right, #8ed14b, #3d3d3d 25%);*/
+    background-size: 400% 400%;
+    background-position: 0 0;
+    animation: bg-out 300ms ease-in forwards 1;
+}
+
+.card:hover .image {
+    animation: bg-in 300ms ease-in forwards 1;
+}
+
+.card .image img{
+    max-width: 220px;
+}
+
+.card .type {
+    color:var(--body-bg);
+    border-radius: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /*background-color: rgba(45, 187, 121, 0.884);*/
+}
+
+.card .type p{
+    margin: 0;
+}
+
+.card .favorite {
+    display: none;
+}
+
+@media screen and (max-width: 1244px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: calc(100% - 20px);
+    }
+}
+
+@keyframes bg-in {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes bg-out {
+    0% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
