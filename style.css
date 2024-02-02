@@ -16,6 +16,7 @@ html, body {
 .bg-fire {
     background: linear-gradient(to top right, #e4604d, #3d3d3d 25%);
 }
+
 .fire {
     background-color: #e4604d;
 }
@@ -23,6 +24,7 @@ html, body {
 .bg-grass {
     background: linear-gradient(to top right, #9dd465, #3d3d3d 25%);
 }
+
 .grass {
     background-color: #9dd465;
 }
@@ -30,6 +32,7 @@ html, body {
 .bg-electric {
     background: linear-gradient(to top right, #f9e45f, #3d3d3d 25%);
 }
+
 .electric {
     background-color: #f9e45f;
 }
@@ -37,6 +40,7 @@ html, body {
 .bg-water {
     background: linear-gradient(to top right, #6a83d6, #3d3d3d 25%);
 }
+
 .water {
     background-color: #6a83d6;
 }
@@ -44,6 +48,7 @@ html, body {
 .bg-ground {
     background: linear-gradient(to top right, #e4c967, #3d3d3d 25%);
 }
+
 .ground {
     background-color: #e4c967;
 }
@@ -51,6 +56,7 @@ html, body {
 .bg-rock {
     background: linear-gradient(to top right, #cabb7b, #3d3d3d 25%);
 }
+
 .rock {
     background-color: #cabb7b;
 }
@@ -58,6 +64,7 @@ html, body {
 .bg-fairy {
     background: linear-gradient(to top right, #eeb2fa, #3d3d3d 25%);
 }
+
 .fairy {
     background-color: #eeb2fa;
 }
@@ -65,6 +72,7 @@ html, body {
 .bg-poison {
     background: linear-gradient(to top right, #9f619d, #3d3d3d 25%);
 }
+
 .poison {
     background-color: #9f619d;
 }
@@ -72,6 +80,7 @@ html, body {
 .bg-bug {
     background: linear-gradient(to top right, #c5cf4a, #3d3d3d 25%);
 }
+
 .bug {
     background-color: #c5cf4a;
 }
@@ -79,6 +88,7 @@ html, body {
 .bg-dragon {
     background: linear-gradient(to top right, #857af7, #3d3d3d 25%);
 }
+
 .dragon {
     background-color: #857af7;
 }
@@ -86,6 +96,7 @@ html, body {
 .bg-psychic {
     background: linear-gradient(to top right, #e56eaf, #3d3d3d 25%);
 }
+
 .psychic {
     background-color: #e56eaf;
 }
@@ -93,6 +104,7 @@ html, body {
 .bg-flying {
     background: linear-gradient(to top right, #80a4f9, #3d3d3d 25%);
 }
+
 .flying {
     background-color: #80a4f9;
 }
@@ -100,6 +112,7 @@ html, body {
 .bg-fighting {
     background: linear-gradient(to top right, #9b5a48, #3d3d3d 25%);
 }
+
 .fighting {
     background-color: #9b5a48;
 }
