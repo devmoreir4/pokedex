@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         'normal',
     ];
 
-    const POKEMON_COUNT = 40;
+    const POKEMON_COUNT = 80;
     const cardHTML = `
         <div class="card" id="card-{id}">
             <div class="title">
@@ -42,6 +42,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const cards = document.querySelector('.cards');
 
     const getType = (data) => {
+        if (!data || data.length === 0) {
+            return 'INVALID_TYPE';
+        }
+
         const apiTypes = data.map((type) => type.type.name);
         const type = types.find((type) => apiTypes.indexOf(type) > -1);
         return type;
@@ -63,17 +67,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const createPokemonCard = (pokemon) => {
         const {id, name, type} = pokemon;
-        let idFormat = id.toString().padStart(3, '0');
-        let newCard = replacer(cardHTML, `\{id\}`, idFormat);
+        let formattedId = id.toString().padStart(3, '0');
+        let newCard = replacer(cardHTML, `\{id\}`, formattedId);
         newCard = replacer(newCard, `\{name\}`, name);
         newCard = replacer(newCard, `\{type\}`, type);
-        console.log(idFormat);
+        console.log(formattedId);
         
         cards.innerHTML += newCard;
-
-        //const num = .toString().padStart(3, '0')
     };
-
+    
     const fetchPokemons = async () => {
         for(let i = 1; i <= POKEMON_COUNT; i++){
             const pokemon = await fetchPokemon(i);
